@@ -1,0 +1,139 @@
+<!-- las clases largas puedo ponerles un ID="Nombre-Mas-Corto"  -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | CompuGarza</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="85px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contactanos.html">Contactanos</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Lleva tu experiencia de <br>gaming a otro nivel</h1>
+                    <p>Productos de la mejor calidad para evitar interrupciones en tus <br> sesiones de
+                        juego
+                        con tus amigos! Mira nuestro catálogo para conocernos.</p>
+                    <a href="productos.html" class="btn">Productos &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/inicio.png">
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Feadtued Categories -->
+
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/r97900x3d.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/x670msi.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/4080tuf.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/4090exclusiva.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <h1>Asus RTX 4090 24GB</h1>
+                        <small>La nueva RTX 4090 ya ha llegado a <b>CompuGarza</b> y queremos
+                            que lo disfrutes siempre como si fuera el primer día. Por eso te regalamos
+                            con la compra de tu nueva gráfica un soporte artesanal para ella!<br></small>
+                        <a href="productos.html" class="btn">Comprar Ahora &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brands -->
+
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/msi.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/nvidia.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/intel.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/amd.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/asus.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-2">
+                        <p>Lo más barato de la red al alcance de tus manos!</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Creado por Gonzalo Suárez</p>
+            </div>
+        </div>
+
+        <!-- Esta parte de JS NO es mia, vino con el template que lo unico que sirve es para que en la vista Mobile
+    no se rompa todo y quede todo desparramado el navbar. :C -->
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px"
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px"
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
